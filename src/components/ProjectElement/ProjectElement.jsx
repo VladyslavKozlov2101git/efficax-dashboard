@@ -5,19 +5,20 @@ import './ProjectElement.scss';
 const ProjectElement = () => {
   //Повинен бути лише 1 корневий елемент
   return (
-    <div className="project">
-      <h2 className="project__title">Zira</h2>
-      <div className="project__block">
-        <div className="project__row">
-          <p className="project__row-text">Ongoing</p>
-          <p className="project__row-text">4</p>
+    <div className="projectElem">
+      <h2 className="projectElem__title">Zira</h2>
+      <div className="projectElem__block">
+        <div className="projectElem__row">
+          <p className="projectElem__row-text">Ongoing</p>
+          <p className="projectElem__row-text">4</p>
         </div>
-        <div className="project__row">
-          <p className="project__row-text">Done</p>
-          <p className="project__row-text">13</p>
+        <div className="projectElem__row">
+          <p className="projectElem__row-text">Done</p>
+          <p className="projectElem__row-text">13</p>
         </div>
       </div>
     </div>
+    
   );
 };
 
