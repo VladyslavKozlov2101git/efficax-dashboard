@@ -4,37 +4,33 @@ import "./ProjectElementRow.scss";
 
 const ProjectElementRow = () => {
   return (
-    <div className="projectElemRow">
-        <div className="projectElemRow__logo">
-          <div className="projectElemRow__logo--title">ZIRA</div>
+    <div className="projectElementRow">
+        <div className="projectElementRow__logo">
+          <div className="projectElementRow__logo--title">ZIRA</div>
         </div>
-
-        <div className="projectElemRow__name">
-          <div className="projectElemRow__name--text">Zira Board</div>
-          <div className="projectElemRow__name--text">A Task Manager you can’t refuse</div>
+        <div className="projectElementRow__ceil">
+         <p className="projectElementRow__ceil--title">Zira Board</p>
+         <p className="projectElementRow__ceil--description">A Task Manager you can’t refuse</p>
         </div>
-
-        <div className="projectElemRow__date">
-          <div className="projectElemRow__date--text">Friday, Sep 2, 2022</div>
-          <div className="projectElemRow__date--text">Creation Date</div>
+        <div className="projectElementRow__ceil">
+         <p className="projectElementRow__ceil--title uppercase">Friday, Sep 2, 2022</p>
+         <p className="projectElementRow__ceil--description">Creation Date</p>
         </div>
-
-
-        <div className="projectElemRow__pl">
-        <div className="projectElemRow__pl--text">Oleksii Moshura</div>
-        <div className="projectElemRow__pl--text">Project lead</div>
+        <div className="projectElementRow__ceil">
+         <p className="projectElementRow__ceil--title">Oleksii Moshura</p>
+         <p className="projectElementRow__ceil--description">Project lead</p>
         </div>
-
-        <div className="projectElemRow__total">
-        <div className="projectElemRow__pl--total">203</div>
-        <div className="projectElemRow__pl--total">Total tasks</div>
+        <div className="projectElementRow__ceil">
+         <p className="projectElementRow__ceil--title">203</p>
+         <p className="projectElementRow__ceil--description">Total tasks</p>
         </div>
-
-        <div className="projectElemRow__developers">
-          <div className="projectElemRow__pl--developers">4</div>
-          <div className="projectElemRow__pl--developers">Developers</div>
+        <div className="projectElementRow__ceil">
+         <p className="projectElementRow__ceil--title">4</p>
+         <p className="projectElementRow__ceil--description">Developers</p>
         </div>
-      </div>
+        </div>
+        
+
   );
 };
 
