@@ -8,14 +8,14 @@ const Project = () => {
   //Повинен бути лише 1 корневий елемент
   return (
     <div className="project">
-      <h2>Recent updates</h2>
+      <h2 className="project__title uppercase">Recent updates</h2>
       <div className="project__row">
         <ProjectElement />
         <ProjectElement />
         <ProjectElement />
         <ProjectElement />
       </div>
-      <h2>All projects</h2>
+      <h2 className="project__title uppercase">All projects</h2>
       <div className="project__column">
         <ProjectElementRow />
         <ProjectElementRow />
