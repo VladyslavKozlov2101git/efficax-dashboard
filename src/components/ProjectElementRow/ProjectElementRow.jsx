@@ -14,7 +14,7 @@ const ProjectElementRow = ({el}) => {
          <p className="projectElementRow__ceil--description">A Task Manager you can’t refuse</p>
         </div>
         <div className="projectElementRow__ceil">
-         <p className="projectElementRow__ceil--title uppercase">Friday, Sep 2, 2022</p>
+         <p className="projectElementRow__ceil--title uppercase">{el.pub_date}</p>
          <p className="projectElementRow__ceil--description">Creation Date</p>
         </div>
         <div className="projectElementRow__ceil">
