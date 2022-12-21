@@ -10,26 +10,38 @@ const Project = () => {
     {
       id: "1",
       name: "Hello Back 1",
+      nameForRecentUpdates: "Hello 1",
       key: "TP-1",
       pub_date: "2022-12-09T12:27:56.328820Z",
+      ongoing: 1,
+      done: 24,
     },
     {
       id: "2",
       name: "Hello Back 2",
+      nameForRecentUpdates: "Hello 2",
       key: "TP-2",
-      pub_date: "2022-12-09T12:27:56.328820Z",
+      pub_date: "2022-12-03T12:27:56.328820Z",
+      ongoing: 25,
+      done: 22,
     },
     {
       id: "3",
       name: "Hello Back 3",
+      nameForRecentUpdates: "Hello 3",
       key: "TP-3",
-      pub_date: "2022-12-09T12:27:56.328820Z",
+      pub_date: "2022-12-01T12:27:56.328820Z",
+      ongoing: 5,
+      done: 0,
     },
     {
       id: "4",
       name: "Hello Back 4",
+      nameForRecentUpdates: "Hello 4",
       key: "TP-4",
-      pub_date: "2022-12-09T12:27:56.328820Z",
+      pub_date: "2022-10-09T12:27:56.328820Z",
+      ongoing: 6,
+      done: 3,
     },
   ];
 
@@ -39,10 +51,9 @@ const Project = () => {
     <div className="project">
       <h2 className="project__title uppercase">Recent updates</h2>
       <div className="project__row">
-        <ProjectElement />
-        <ProjectElement />
-        <ProjectElement />
-        <ProjectElement />
+        {arrProjects.map((el, index) => 
+          <ProjectElement el={el} key={index} />
+        )}
        
       </div>
       <h2 className="project__title uppercase">All projects </h2>
@@ -58,6 +69,8 @@ const Project = () => {
          Метод map() визивається стільки ж разів, скільки у тебе елементів в масиві.
 
          Index -- порядковий номер в списку, він починається з 0.
+
+          <ProjectElement />
 
           
           */}
