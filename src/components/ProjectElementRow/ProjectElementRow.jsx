@@ -3,7 +3,6 @@ import React from "react";
 import "./ProjectElementRow.scss";
 
 const ProjectElementRow = ({el}) => {
-  console.log(el)
   return (
     <div className="projectElementRow">
         <div className="projectElementRow__logo">
